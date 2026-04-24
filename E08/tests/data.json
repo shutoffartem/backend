@@ -1,0 +1,16 @@
+[
+    {
+        "artist": "Adele",
+        "title": "25",
+        "tracks": 11,
+        "year": 2015,
+        "genre": "Pop"
+    },
+    {
+        "artist": "Nirvana",
+        "title": "Nevermind",
+        "tracks": 12,
+        "year": 1991,
+        "genre": "Rock"
+    }
+]

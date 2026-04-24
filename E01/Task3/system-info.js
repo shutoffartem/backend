@@ -1,10 +1,14 @@
-import { os } from 'os';
+import os from "os"
 
-{
-  "type": "module",
-  "name": "exercise-1-3",
-  "version": "1.0.0",
-  "scripts": {
-    "start": "node system-info.js",
+function getSystemInfo() {
+  return {
+    uptimeSeconds: os.uptime(),
+    totalMemoryMB: Math.round(os.totalmem() / 1024 / 1024),
+    platform: os.platform(),
+    architecture: os.arch(),
+    cpuCores: os.cpus().length
   }
 }
+
+console.log("System Info:")
+console.log(getSystemInfo())

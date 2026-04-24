@@ -1,33 +1,33 @@
 # Exercise set 01
 
-Example documentation file for the exercise set 01. This file should be updated with the completion of each task in the set and the link for this documentation should be submitted to Moodle.
-
-**Use image links to include screenshots of your solutions.**
-
-**The completion of each task (e.g. a request/response from an API client, console messages, screens from database admin software) should be made visible using screeshots.** 
-
 ## Task 1
 
-Add documentation for the completion of Task 1 here.
+Installed Node.js and verified installation with `node -v` and `npm -v`. Created `hello.js` and ran `node hello.js`.
 
-Add images to the [`screenshots` folder](screenshots) for each exercise set and link them in this markdown file. Use the following markdown syntax to include images in this document:
-
-```markdown
-![Example screenshot](screenshots/Postman_access_granted.png)
-```
-
-The markdown above will include the image `Postman_access_granted.png` from the `screenshots` folder:
-
-![Example screenshot](screenshots/Postman_access_granted.png)
+![Task 1](screenshots/task1.png)
 
 ## Task 2
 
-Add documentation for the completion of Task 2 here.
+Created `environment.js` and displayed environment information using `process`. Ran `node environment.js`.
 
-You can also use code blocks to include code snippets in the documentation:
+![Task 2](screenshots/task2.png)
 
-```javascript
-console.log('Hello, world!');
-```
+## Task 3
 
-## and so on...
+Created `package.json` with ES modules. Created `system-info.js` using the `os` module. Ran `npm start`.
+
+![Task 3](screenshots/task3.png)
+
+## Task 4
+
+Created `file-ops.js` using `fs/promises`. Created `output.txt`, wrote data, and read file contents. Ran `npm start`.
+
+![Task 4 Terminal](screenshots/task4a.png)
+![Task 4 File](screenshots/task4b.png)
+
+## Task 5
+
+Created HTTP server with routes `/`, `/api/system`, and `/api/time`. Started server with `node server.js` and tested routes in browser.
+
+![Task 5 System](screenshots/task5a.png)
+![Task 5 Time](screenshots/task5b.png)

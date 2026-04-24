@@ -1,0 +1,21 @@
+{
+  "albums": [
+    {
+      "id": 2,
+      "title": "Thriller",
+      "artist": "Michael Jackson",
+      "year": 1982,
+      "genre": "Pop"
+    },
+    {
+      "id": 1776956370075
+    },
+    {
+      "id": 1776956414882,
+      "title": "Test Album",
+      "artist": "Test Artist",
+      "year": 2024,
+      "genre": "Pop"
+    }
+  ]
+}

@@ -30,12 +30,11 @@ You can remove this section fenced in `>>>` after you have read the instructions
 ### [Exercise set 1](E01/README.md)
 
 - [x] Task 1: 2/2 points - Works as expected
-- [x] Task 2: 2/3 points - Partially correct, did not implement the function correctly
-- [~] Task 3: 0/4 points - Did not have time  
-- [ ] Task 4: 0/3 points - Not started
-- [ ] Task 5: 0/5 points - Not started 
-
-Total 5/17
+- [x] Task 2: 3/3 points - Works as expected
+- [x] Task 3: 4/4 points - Works as expected
+- [x] Task 4: 3/3 points - Works as expected
+- [x] Task 5: 5/5 points - Works as expected
+Total 17/17
 
 ------------------
 
