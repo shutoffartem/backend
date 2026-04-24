@@ -1,4 +1,4 @@
-import { describe, test, expect, beforeEach } from 'vitest'
+import { describe, test, expect, beforeAll, beforeEach, afterAll } from 'vitest'
 import request from 'supertest'
 import mongoose from 'mongoose'
 import fs from 'fs/promises'
@@ -10,11 +10,11 @@ import connectMongoDB from '../db/mongodb.js'
 import 'dotenv/config'
 process.env.NODE_ENV = 'test'
 
-process.env.NODE_ENV = 'test'
+beforeAll(async () => {
+    await connectMongoDB(process.env.TEST_MONGO_URI)
+})
 
 beforeEach(async () => {
-    await connectMongoDB(process.env.TEST_MONGO_URI)
-
     await Album.deleteMany({})
 
     const data = JSON.parse(
@@ -24,7 +24,12 @@ beforeEach(async () => {
     await Album.insertMany(data)
 })
 
+afterAll(async () => {
+    await mongoose.connection.close()
+})
+
 describe('Albums API', () => {
+
     test('GET /albums returns exact seeded count', async () => {
         const res = await request(app).get('/albums')
 
@@ -72,4 +77,5 @@ describe('Albums API', () => {
 
         expect([404, 500]).toContain(res.statusCode)
     })
+
 })
