@@ -1,8 +1,0 @@
-{
-  "type": "module",
-  "name": "express-basics",
-  "scripts": {
-    "start": "node app.js",
-    "dev": "node --watch app.js"
-  }
-}
